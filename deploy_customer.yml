@@ -1,0 +1,10 @@
+---
+- name: Deploying soap-server war
+  hosts: soap-server
+  roles:
+  - soap-server
+
+- name: deploy db.sh
+  hosts: postgresql
+  roles:
+    - postgres
